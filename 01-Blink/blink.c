@@ -34,8 +34,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#define CHIP_PATH   "/dev/gpiochip0"   /* change to gpiochip4 on a Pi 5 */
-#define LED_OFFSET  17                 /* GPIO17 = physical pin 11 */
+#define CHIP_PATH   "/dev/gpiochip0"   // change to gpiochip4 on a Pi 5 
+#define LED_OFFSET  17                 //GPIO17 = physical pin 11 */
 
 int main(void)
 {
@@ -81,10 +81,13 @@ int main(void)
 
     for (int i = 0; i < 10; i++) {
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(100000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
-        sleep(1);
+        usleep(100000);
+
     }
+    
+
     ret = 0;
 
 cleanup:
@@ -95,3 +98,4 @@ cleanup:
     if (chip)     gpiod_chip_close(chip);
     return ret;
 }
+
