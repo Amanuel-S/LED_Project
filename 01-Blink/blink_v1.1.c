@@ -81,51 +81,53 @@ int main(void)
 
         //S
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(50000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(50000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(50000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
-
+        
+       
 
         //O
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        usleep(50000);
+        sleep(1);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        usleep(50000);
+        sleep(1);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        usleep(50000);
+        sleep(1);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
+
 
         //S
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(50000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(50000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(50000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         sleep(2);
     }
