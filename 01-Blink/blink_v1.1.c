@@ -100,17 +100,17 @@ int main(void)
         //O
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(150000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(150000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
 
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_ACTIVE);
-        sleep(1);
+        usleep(150000);
         gpiod_line_request_set_value(request, offset, GPIOD_LINE_VALUE_INACTIVE);
         usleep(80000);
 
